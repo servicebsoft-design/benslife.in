@@ -2563,7 +2563,7 @@ figure {
    ========================================================================== */
 .counter-parallax{
     background-image: url("../img/images/parallax-bg.jpg");
-    height: 400px; 
+    /*height: 400px; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
