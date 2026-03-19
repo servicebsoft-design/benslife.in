@@ -53,8 +53,9 @@
         <div class="container">
             <div class="top-header-left">
                 <div class="inner-header-left"><p><a href="careers.html">CAREERS</a> </p></div>
-                <div class="inner-header-left"><p><a href="index-2.html">PRICING</a> </p></div>
-                <div class="inner-header-left"><p><a href="faq.html">FAQ</a> </p></div>
+                <!-- <div class="inner-header-left"><p><a href="error-page.html">PRICING</a> </p></div> -->
+                <div class="inner-header-left"><p><a href="error-page.html">FAQ</a> </p></div>
+                <div class="inner-header-left"><p id="result"> </p></div>
             </div>
             <div class="top-header-social">
                 <div class="inner-header-social"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
@@ -78,7 +79,7 @@
                 <div class="email">
                     <figure class="mail-icon"><img src="img/master/mail.png" alt=""></figure>
                     <h6>Email Us:</h6>
-                    <p>info@benslife.in</p>
+                    <p>admin@benslife.org</p>
                 </div>
                 <div class="phone">
                     <figure class="phone-icon"><img src="img/master/phone.png" alt=""></figure>
@@ -217,6 +218,22 @@
       })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-101241150-1', 'auto');
       ga('send', 'pageview');
+
+
+      if (typeof(Storage) !== "undefined") {
+      var path = window.location.pathname;
+      var page = path.split("/").pop();
+      
+        if(page == "index.html"){
+          localStorage.clickcount = Number(localStorage.clickcount || 0) + 1;
+          document.getElementById("result").innerHTML = " Visits " + localStorage.clickcount + " ";
+        }      
+        else{
+          localStorage.clickcount = Number(localStorage.clickcount || 0) + 0;
+          document.getElementById("result").innerHTML = " Visits " + localStorage.clickcount + " ";
+        }
+      }
+
     </script> 
     
     </body>
