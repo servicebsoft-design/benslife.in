@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US" class="no-js">
 	
-
 <head>
 		<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -80,12 +79,13 @@
                 <div class="email">
                     <figure class="mail-icon"><img src="img/master/mail.png" alt=""></figure>
                     <h6>Email Us:</h6>
-                    <p>info@benslife.in</p>
+                    <p>admin@benslife.org</p>
                 </div>
                 <div class="phone">
                     <figure class="phone-icon"><img src="img/master/phone.png" alt=""></figure>
                     <h6>Call Us:</h6>
                     <p>+91 94880 06879</p>
+                    <p>+91 94877 12306</p>
                 </div>
             </div>
         </div>    
@@ -139,7 +139,7 @@
                     <hr class="contact">
                     <p class="address">Coimbatore - 641006.</p>
                     <p class="phone">+91 94880 06879</p>
-                    <p class="email">info@benslife.in</p>
+                    <p class="email">admin@benslife.org</p>
                     <hr class="contact">
                     <div class="social-contact"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
                     <div class="social-contact"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
@@ -149,7 +149,8 @@
               </div>
               <div class="col-lg-7 contact-right">
                 <div class="contact-form">
-                  <form id="contact-form" action="https://formsubmit.co/service.bsoft@gmail.com" method="POST" >
+            
+                  <form id="contact-form" action="mail.php" method="POST" >
                         <div class="messages"></div>
                         <div class="controls">
                             <div class="row">
@@ -157,8 +158,6 @@
                                     <div class="form-group">
                                         <input id="form_name" type="text" name="name" class="form-control custome-form" placeholder="Name" required="required" data-error="Firstname is required.">
                                         <div class="help-block with-errors"></div>
-                                        <input type="hidden" name="_next" value="file:///E:/BLS/Website/BENS%20-%20Website/benslife.in/index.html">
-                                        <input type="hidden" name="_subject" value="New mail from admin"> 
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -173,10 +172,11 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="btn-send"><p><input type="submit" class="btn btn-custom btn-custom-small" value="SEND MESSAGE"></p></div>
+                            </div>  
+                            <div class="btn-send"><p><input type="submit" name="sendmail" class="btn btn-custom btn-custom-small" value="SEND MESSAGE"></p></div>
                         </div>
                     </form>
+                
                 </div> 
               </div>
             </div>
@@ -218,7 +218,7 @@
                     <div class="location-box location-phone">
                         <figure class="bottom-location-icon"><img src="img/master/call-footer.png" alt=""></figure>
                         <h6>Call us:</h6>
-                        <p>+91 94880 06879</p>
+                        <p>+91 94880 06879, +91 94877 12306</p>
                     </div>
                 </div>
               </div>
